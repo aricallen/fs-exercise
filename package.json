@@ -8,11 +8,10 @@
     "dist/**/*"
   ],
   "scripts": {
-    "start": "yarn build && node dist/index.js",
+    "start": "yarn build && yarn start",
     "dev": "tsc -w",
     "build": "tsc",
-    "test": "jest",
-    "test:w": "jest --watch"
+    "serve": "node ./server/index.js"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",

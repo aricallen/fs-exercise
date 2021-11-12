@@ -1,0 +1,49 @@
+{
+  "name": "fs-exercise",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "start": "yarn build && node dist/index.js",
+    "dev": "tsc -w",
+    "build": "tsc",
+    "test": "jest",
+    "test:w": "jest --watch"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1",
+    "pretty-quick": "^3.1.1",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=10.4.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick",
+      "pre-push": "yarn build"
+    }
+  },
+  "author": "",
+  "license": "MIT"
+}

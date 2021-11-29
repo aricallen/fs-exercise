@@ -8,9 +8,10 @@ app.use(bodyParser.json());
 app.listen(3000);
 console.log('serving app at http://localhost:3000');
 
-const staticDirPath = path.resolve(__dirname, '..', 'dist', 'app');
-const staticServer = express.static(staticDirPath);
+const dirPath = path.resolve(__dirname, '..', process.env.ASSET_DIR, 'app');
+const staticServer = express.static(dirPath);
 app.use(staticServer);
+
 app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, '..', 'index.html'))
 });

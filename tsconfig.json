@@ -8,12 +8,12 @@
     "declaration": true,
     "declarationMap": true,
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDir": "ts",
     "downlevelIteration": true,
     "strict": true,
     "esModuleInterop": true,
     "inlineSourceMap": true
   },
-  "include": ["src/**/*"],
+  "include": ["ts/**/*"],
   "exclude": ["node_modules"]
 }

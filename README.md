@@ -15,4 +15,4 @@ yarn serve # express server
 ## Instructions
 
 * update API to support returning an optionally requested amount of users
-* update onClick to fetch 10 users at a time for quicker load times
+* add pagination support to API so that each click only fetches next N users

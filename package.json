@@ -11,8 +11,9 @@
     "start": "yarn build && yarn start",
     "dev": "tsc -w",
     "build": "tsc",
-    "serve": "ASSET_DIR=dist nodemon node ./server/index.js",
-    "serve:js": "ASSET_DIR=js nodemon node ./server/index.js"
+    "serve:js": "ASSET_DIR=js yarn dev-server",
+    "serve:ts": "ASSET_DIR=dist yarn dev-server",
+    "dev-server": "nodemon node ./server/index.js"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",

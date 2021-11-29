@@ -19,7 +19,6 @@ yarn serve:ts # express server
 **for javascript**
 
 ```sh
-# for javascript
 yarn serve:js
 # open http://localhost:3000
 ```
